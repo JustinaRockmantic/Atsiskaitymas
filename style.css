@@ -1,7 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
 nav {
   display: flex;
   flex-direction: row;
@@ -12,17 +8,12 @@ nav {
 
 a {
   padding: 16px 8px;
-  transition: 0.3s ease;
   text-decoration: none;
   color: black;
 }
 .signup {
   color: fuchsia;
 }
-/* a:hover {
-  background-color: rgb(14, 97, 69);
-  transform: rotate();
-} */
 
 #burger-menu {
   width: 50px;
@@ -34,18 +25,263 @@ a {
   background-color: white;
 }
 
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
   #links {
     display: none;
+    margin: 3px;
   }
   #burger-menu {
     display: inline-block;
+    margin: 3px;
+    padding-left: 50px;
   }
   nav {
     justify-content: stretch;
     padding: 2%;
+    margin: 3px;
   }
   nav > img {
-    padding-right: 30%;
+    padding-right: 45%;
+  }
+  .container {
+    margin: 2px 0 0 -20px;
+    width: 600px;
+  }
+}
+/* header end */
+.left {
+  width: 60%;
+  height: 200px;
+  display: inline-block;
+  padding-top: 20px;
+}
+#ateivis {
+  background-image: url(./assets/assets/graphic.svg);
+  height: 300px;
+  width: 600px;
+  background-position: right;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: 400px;
+}
+
+.launch {
+  color: fuchsia;
+  font-size: large;
+  display: inline-block;
+}
+
+.nft,
+#le {
+  font-size: 45px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.text,
+#opensea,
+.sea {
+  font-size: 25px;
+  color: grey;
+}
+
+.signupbtn {
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: "Avenir Next";
+  font-size: 1rem;
+  padding: 0.5rem 3rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #ede611, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  margin-top: 20px;
+}
+.container {
+  /* background-image: url(./assets/assets/background.svg); */
+  position: relative;
+  text-align: center;
+  color: black;
+}
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-70%, -50%);
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 550px;
+  height: 200px;
+  column-gap: 70px;
+  padding: 40px;
+  margin-left: 3px;
+}
+
+#boom {
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: url(./assets/assets/companies/1.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#blimp {
+  grid-area: 1 / 2 / 2 / 3;
+  background-image: url(./assets/assets/companies/2.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#qrco {
+  grid-area: 2 / 1 / 3 / 2;
+  background-image: url(./assets/assets/companies/3.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#droplet {
+  grid-area: 2 / 2 / 3 / 3;
+  background-image: url(./assets/assets/companies/4.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.text2 {
+  width: 70%;
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+  width: 400px;
+  height: 380px;
+  column-gap: 40px;
+  margin: 20px 60px 0 0;
+}
+
+#first {
+  display: inline-block;
+}
+#gloop {
+  color: orange;
+  display: inline-block;
+}
+#bid {
+  color: grey;
+  display: inline-block;
+  padding-left: 110px;
+}
+#name {
+  font-size: 25px;
+  display: inline-block;
+}
+#logo2 {
+  display: inline-block;
+  padding-left: 30px;
+}
+#eth {
+  font-size: 25px;
+  display: inline-block;
+}
+#nr,
+#day {
+  color: grey;
+  display: inline-block;
+}
+#day {
+  padding-left: 170px;
+}
+
+#logo5 {
+  padding-left: 100px;
+  display: inline-block;
+}
+#logo4 {
+  padding-left: 100px;
+  display: inline-block;
+}
+#logo3 {
+  padding-left: 60px;
+  display: inline-block;
+}
+#fonas {
+  background-color: rgb(211, 211, 211);
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+hr {
+  padding-top: 100px;
+}
+#green {
+  float: right;
+  width: 30%;
+  height: 300px;
+  /* padding-top: 200px; */
+  background-image: url(./assets/assets/upsell-footer-image.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.left2 {
+  width: 50%;
+  height: 200px;
+  display: inline-block;
+}
+.left2,
+#green {
+  padding-bottom: 70%;
+}
+#footer_text {
+  color: grey;
+  font-size: x-large;
+}
+#soc_logo {
+  color: grey;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 20px;
+}
+table {
+  padding-top: 20px;
+  font-size: x-large;
+}
+td:nth-child(even),
+th:nth-child(even) {
+  padding-left: 300px;
+  text-align: left;
+}
+#copyright {
+  color: grey;
+  padding-top: 20px;
+  font-size: x-large;
+}
+
+@media screen and (min-width: 601px) {
+  * {
+    margin: 3px;
+    box-sizing: border-box;
+  }
+  #links {
+    display: flex;
+    margin: 3px;
+    padding-left: 500px;
+    align-content: flex-end;
+  }
+  #burger-menu {
+    display: none;
   }
 }
